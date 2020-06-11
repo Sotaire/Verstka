@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booking details"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book"
+        android:text="WAROENG DOWN                   NORMAL"
+        android:textSize="40sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorLightDark"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/line1"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+        android:layout_marginTop="16dp"></TextView>
+
+    <LinearLayout
+        android:id="@+id/search_plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jumlah kursi"
+            android:textSize="18sp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="25 Kursi"
+            android:textSize="28sp"
+            android:textColor="@color/colorLightDark"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/search_plate"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="130dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jumlah kursi"
+            android:textSize="18sp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20 June 8PM"
+            android:textSize="28sp"
+            android:textColor="@color/colorLightDark"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manue package"
+        android:textSize="18sp"
+        android:layout_marginLeft="11dp"
+        android:layout_below="@id/date"
+        android:layout_marginTop="40dp"></TextView>
+    <LinearLayout
+        android:id="@+id/food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/menu">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plate"></ImageView>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHICKEN GEPREK"
+                android:textSize="24sp"
+                android:textColor="@color/colorLightDark"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Pieces"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=":"
+                android:gravity="right"
+                android:textSize="60sp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Price1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food"
+        android:orientation="vertical"
+        android:background="@color/Price">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="20sp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/Gray"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="11dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2x CHICKEN GEPREK"
+                android:textSize="20sp"
+                android:textColor="@color/White"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="$ 41,00"
+                android:layout_marginLeft="90sp"
+                android:gravity="top"
+                android:textColor="@color/White"
+                android:textSize="30sp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Price1"
+        android:orientation="vertical"
+        android:layout_marginLeft="11dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="People present"
+            android:layout_marginTop="20dp"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                style="@style/Images"
+                android:src="@drawable/person1"></ImageView>
+            <ImageView
+                style="@style/Images"
+                android:src="@drawable/person2"></ImageView>
+            <ImageView
+                style="@style/Images"
+                android:src="@drawable/person3"></ImageView>
+            <ImageView
+                style="@style/Images"
+                android:src="@drawable/person4"></ImageView>
+            <ImageView
+                style="@style/Images"
+                android:src="@drawable/etc"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
